@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951424CCAEB9004369BC /* AppDelegate.swift */; };
+		B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951624CCAEB9004369BC /* SceneDelegate.swift */; };
+		B49F951924CCAEB9004369BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951824CCAEB9004369BC /* ViewController.swift */; };
+		B49F951C24CCAEB9004369BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49F951A24CCAEB9004369BC /* Main.storyboard */; };
+		B49F951E24CCAEC0004369BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49F951D24CCAEC0004369BC /* Assets.xcassets */; };
+		B49F952124CCAEC0004369BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */; };
+		B49F952C24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */; };
+		B49F953724CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B49F952824CCAEC0004369BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49F950924CCAEB9004369BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49F951024CCAEB9004369BC;
+			remoteInfo = "Ultimate Football Quiz";
+		};
+		B49F953324CCAEC0004369BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B49F950924CCAEB9004369BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B49F951024CCAEB9004369BC;
+			remoteInfo = "Ultimate Football Quiz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate Football Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49F951424CCAEB9004369BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B49F951624CCAEB9004369BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B49F951824CCAEB9004369BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B49F951B24CCAEB9004369BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B49F951D24CCAEC0004369BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B49F952024CCAEC0004369BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B49F952224CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate Football QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_Football_QuizTests.swift; sourceTree = "<group>"; };
+		B49F952D24CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate Football QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_Football_QuizUITests.swift; sourceTree = "<group>"; };
+		B49F953824CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B49F950E24CCAEB9004369BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F952424CCAEC0004369BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F952F24CCAEC0004369BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B49F950824CCAEB9004369BC = {
+			isa = PBXGroup;
+			children = (
+				B49F951324CCAEB9004369BC /* Ultimate Football Quiz */,
+				B49F952A24CCAEC0004369BC /* Ultimate Football QuizTests */,
+				B49F953524CCAEC0004369BC /* Ultimate Football QuizUITests */,
+				B49F951224CCAEB9004369BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B49F951224CCAEB9004369BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */,
+				B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */,
+				B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B49F951324CCAEB9004369BC /* Ultimate Football Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				B49F951424CCAEB9004369BC /* AppDelegate.swift */,
+				B49F951624CCAEB9004369BC /* SceneDelegate.swift */,
+				B49F951824CCAEB9004369BC /* ViewController.swift */,
+				B49F951A24CCAEB9004369BC /* Main.storyboard */,
+				B49F951D24CCAEC0004369BC /* Assets.xcassets */,
+				B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */,
+				B49F952224CCAEC0004369BC /* Info.plist */,
+			);
+			path = "Ultimate Football Quiz";
+			sourceTree = "<group>";
+		};
+		B49F952A24CCAEC0004369BC /* Ultimate Football QuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */,
+				B49F952D24CCAEC0004369BC /* Info.plist */,
+			);
+			path = "Ultimate Football QuizTests";
+			sourceTree = "<group>";
+		};
+		B49F953524CCAEC0004369BC /* Ultimate Football QuizUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */,
+				B49F953824CCAEC0004369BC /* Info.plist */,
+			);
+			path = "Ultimate Football QuizUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B49F951024CCAEB9004369BC /* Ultimate Football Quiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49F953B24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football Quiz" */;
+			buildPhases = (
+				B49F950D24CCAEB9004369BC /* Sources */,
+				B49F950E24CCAEB9004369BC /* Frameworks */,
+				B49F950F24CCAEB9004369BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ultimate Football Quiz";
+			productName = "Ultimate Football Quiz";
+			productReference = B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B49F952624CCAEC0004369BC /* Ultimate Football QuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49F953E24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizTests" */;
+			buildPhases = (
+				B49F952324CCAEC0004369BC /* Sources */,
+				B49F952424CCAEC0004369BC /* Frameworks */,
+				B49F952524CCAEC0004369BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49F952924CCAEC0004369BC /* PBXTargetDependency */,
+			);
+			name = "Ultimate Football QuizTests";
+			productName = "Ultimate Football QuizTests";
+			productReference = B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B49F953124CCAEC0004369BC /* Ultimate Football QuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B49F954124CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizUITests" */;
+			buildPhases = (
+				B49F952E24CCAEC0004369BC /* Sources */,
+				B49F952F24CCAEC0004369BC /* Frameworks */,
+				B49F953024CCAEC0004369BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B49F953424CCAEC0004369BC /* PBXTargetDependency */,
+			);
+			name = "Ultimate Football QuizUITests";
+			productName = "Ultimate Football QuizUITests";
+			productReference = B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B49F950924CCAEB9004369BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Abdulrahman ibrahim";
+				TargetAttributes = {
+					B49F951024CCAEB9004369BC = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					B49F952624CCAEC0004369BC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B49F951024CCAEB9004369BC;
+					};
+					B49F953124CCAEC0004369BC = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B49F951024CCAEB9004369BC;
+					};
+				};
+			};
+			buildConfigurationList = B49F950C24CCAEB9004369BC /* Build configuration list for PBXProject "Ultimate Football Quiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B49F950824CCAEB9004369BC;
+			productRefGroup = B49F951224CCAEB9004369BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B49F951024CCAEB9004369BC /* Ultimate Football Quiz */,
+				B49F952624CCAEC0004369BC /* Ultimate Football QuizTests */,
+				B49F953124CCAEC0004369BC /* Ultimate Football QuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B49F950F24CCAEB9004369BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49F952124CCAEC0004369BC /* LaunchScreen.storyboard in Resources */,
+				B49F951E24CCAEC0004369BC /* Assets.xcassets in Resources */,
+				B49F951C24CCAEB9004369BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F952524CCAEC0004369BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F953024CCAEC0004369BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B49F950D24CCAEB9004369BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49F951924CCAEB9004369BC /* ViewController.swift in Sources */,
+				B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */,
+				B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F952324CCAEC0004369BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49F952C24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B49F952E24CCAEC0004369BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B49F953724CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B49F952924CCAEC0004369BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49F951024CCAEB9004369BC /* Ultimate Football Quiz */;
+			targetProxy = B49F952824CCAEC0004369BC /* PBXContainerItemProxy */;
+		};
+		B49F953424CCAEC0004369BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B49F951024CCAEB9004369BC /* Ultimate Football Quiz */;
+			targetProxy = B49F953324CCAEC0004369BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B49F951A24CCAEB9004369BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49F951B24CCAEB9004369BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B49F952024CCAEC0004369BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B49F953924CCAEC0004369BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B49F953A24CCAEC0004369BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B49F953C24CCAEC0004369BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B49F953D24CCAEC0004369BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B49F953F24CCAEC0004369BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football QuizTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate Football Quiz.app/Ultimate Football Quiz";
+			};
+			name = Debug;
+		};
+		B49F954024CCAEC0004369BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football QuizTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate Football Quiz.app/Ultimate Football Quiz";
+			};
+			name = Release;
+		};
+		B49F954224CCAEC0004369BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football QuizUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ultimate Football Quiz";
+			};
+			name = Debug;
+		};
+		B49F954324CCAEC0004369BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 85M6Z5U52M;
+				INFOPLIST_FILE = "Ultimate Football QuizUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Ultimate Football Quiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B49F950C24CCAEB9004369BC /* Build configuration list for PBXProject "Ultimate Football Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49F953924CCAEC0004369BC /* Debug */,
+				B49F953A24CCAEC0004369BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49F953B24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football Quiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49F953C24CCAEC0004369BC /* Debug */,
+				B49F953D24CCAEC0004369BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49F953E24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49F953F24CCAEC0004369BC /* Debug */,
+				B49F954024CCAEC0004369BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B49F954124CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49F954224CCAEC0004369BC /* Debug */,
+				B49F954324CCAEC0004369BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B49F950924CCAEB9004369BC /* Project object */;
+}
