@@ -1,0 +1,6 @@
+framework module Pods_Ultimate_Football_Quiz {
+  umbrella header "Pods-Ultimate Football Quiz-umbrella.h"
+
+  export *
+  module * { export * }
+}
