@@ -3,39 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A474D959BD86BFEFB9991A4F /* Pods_Ultimate_Football_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */; };
+		B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F124D424A200B12123 /* GeneralQuestions.swift */; };
+		B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F324D5D22900B12123 /* EndGameViewController.swift */; };
 		B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951424CCAEB9004369BC /* AppDelegate.swift */; };
 		B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951624CCAEB9004369BC /* SceneDelegate.swift */; };
 		B49F951924CCAEB9004369BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951824CCAEB9004369BC /* ViewController.swift */; };
 		B49F951C24CCAEB9004369BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49F951A24CCAEB9004369BC /* Main.storyboard */; };
 		B49F951E24CCAEC0004369BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B49F951D24CCAEC0004369BC /* Assets.xcassets */; };
 		B49F952124CCAEC0004369BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */; };
-		B49F952C24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */; };
-		B49F953724CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */; };
+		B49F954B24CCCF76004369BC /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F954A24CCCF76004369BC /* settingViewController.swift */; };
+		B49F954D24CCD970004369BC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F954C24CCD970004369BC /* QuestionViewController.swift */; };
+		B49F955224CF63B9004369BC /* QuestionAnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */; };
+		B49F955424CF80BC004369BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49F955324CF80BC004369BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B49F952824CCAEC0004369BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B49F950924CCAEB9004369BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B49F951024CCAEB9004369BC;
-			remoteInfo = "Ultimate Football Quiz";
-		};
-		B49F953324CCAEC0004369BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B49F950924CCAEB9004369BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B49F951024CCAEB9004369BC;
-			remoteInfo = "Ultimate Football Quiz";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultimate Football Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.debug.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.release.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.release.xcconfig"; sourceTree = "<group>"; };
+		B48700F124D424A200B12123 /* GeneralQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralQuestions.swift; sourceTree = "<group>"; };
+		B48700F324D5D22900B12123 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		B49F951124CCAEB9004369BC /* Football Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49F951424CCAEB9004369BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49F951624CCAEB9004369BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B49F951824CCAEB9004369BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +35,11 @@
 		B49F951D24CCAEC0004369BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B49F952024CCAEC0004369BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B49F952224CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate Football QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_Football_QuizTests.swift; sourceTree = "<group>"; };
-		B49F952D24CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ultimate Football QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultimate_Football_QuizUITests.swift; sourceTree = "<group>"; };
-		B49F953824CCAEC0004369BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49F954A24CCCF76004369BC /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		B49F954C24CCD970004369BC /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerManager.swift; sourceTree = "<group>"; };
+		B49F955324CF80BC004369BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../UFQ Assests/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultimate_Football_Quiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,42 +47,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49F952424CCAEC0004369BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49F952F24CCAEC0004369BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A474D959BD86BFEFB9991A4F /* Pods_Ultimate_Football_Quiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		596C60484A75C629F6E64B89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */,
+				5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B49F950824CCAEB9004369BC = {
 			isa = PBXGroup;
 			children = (
 				B49F951324CCAEB9004369BC /* Ultimate Football Quiz */,
-				B49F952A24CCAEC0004369BC /* Ultimate Football QuizTests */,
-				B49F953524CCAEC0004369BC /* Ultimate Football QuizUITests */,
 				B49F951224CCAEB9004369BC /* Products */,
+				596C60484A75C629F6E64B89 /* Pods */,
+				F2FC410CB539069961A68341 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B49F951224CCAEB9004369BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */,
-				B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */,
-				B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */,
+				B49F951124CCAEB9004369BC /* Football Quiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,33 +84,61 @@
 		B49F951324CCAEB9004369BC /* Ultimate Football Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				B49F952224CCAEC0004369BC /* Info.plist */,
+				B49F955324CF80BC004369BC /* GoogleService-Info.plist */,
 				B49F951424CCAEB9004369BC /* AppDelegate.swift */,
 				B49F951624CCAEB9004369BC /* SceneDelegate.swift */,
-				B49F951824CCAEB9004369BC /* ViewController.swift */,
-				B49F951A24CCAEB9004369BC /* Main.storyboard */,
-				B49F951D24CCAEC0004369BC /* Assets.xcassets */,
-				B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */,
-				B49F952224CCAEC0004369BC /* Info.plist */,
+				B49F955024CF6202004369BC /* Model */,
+				B49F954724CCC281004369BC /* Controllers */,
+				B49F954E24CDC01C004369BC /* View */,
+				B49F954F24CDC02A004369BC /* Supporting Files */,
 			);
 			path = "Ultimate Football Quiz";
 			sourceTree = "<group>";
 		};
-		B49F952A24CCAEC0004369BC /* Ultimate Football QuizTests */ = {
+		B49F954724CCC281004369BC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B49F952B24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift */,
-				B49F952D24CCAEC0004369BC /* Info.plist */,
+				B49F951824CCAEB9004369BC /* ViewController.swift */,
+				B49F954A24CCCF76004369BC /* settingViewController.swift */,
+				B49F954C24CCD970004369BC /* QuestionViewController.swift */,
+				B48700F324D5D22900B12123 /* EndGameViewController.swift */,
 			);
-			path = "Ultimate Football QuizTests";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		B49F953524CCAEC0004369BC /* Ultimate Football QuizUITests */ = {
+		B49F954E24CDC01C004369BC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B49F953624CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift */,
-				B49F953824CCAEC0004369BC /* Info.plist */,
+				B49F951A24CCAEB9004369BC /* Main.storyboard */,
+				B49F951D24CCAEC0004369BC /* Assets.xcassets */,
 			);
-			path = "Ultimate Football QuizUITests";
+			path = View;
+			sourceTree = "<group>";
+		};
+		B49F954F24CDC02A004369BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B49F951F24CCAEC0004369BC /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B49F955024CF6202004369BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */,
+				B48700F124D424A200B12123 /* GeneralQuestions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2FC410CB539069961A68341 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B49F953B24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football Quiz" */;
 			buildPhases = (
+				B055BEC95B424FADB6C8B1BC /* [CP] Check Pods Manifest.lock */,
 				B49F950D24CCAEB9004369BC /* Sources */,
 				B49F950E24CCAEB9004369BC /* Frameworks */,
 				B49F950F24CCAEB9004369BC /* Resources */,
+				A8FA38514D59919F8C4E58CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,44 +160,8 @@
 			);
 			name = "Ultimate Football Quiz";
 			productName = "Ultimate Football Quiz";
-			productReference = B49F951124CCAEB9004369BC /* Ultimate Football Quiz.app */;
+			productReference = B49F951124CCAEB9004369BC /* Football Quiz.app */;
 			productType = "com.apple.product-type.application";
-		};
-		B49F952624CCAEC0004369BC /* Ultimate Football QuizTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B49F953E24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizTests" */;
-			buildPhases = (
-				B49F952324CCAEC0004369BC /* Sources */,
-				B49F952424CCAEC0004369BC /* Frameworks */,
-				B49F952524CCAEC0004369BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B49F952924CCAEC0004369BC /* PBXTargetDependency */,
-			);
-			name = "Ultimate Football QuizTests";
-			productName = "Ultimate Football QuizTests";
-			productReference = B49F952724CCAEC0004369BC /* Ultimate Football QuizTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B49F953124CCAEC0004369BC /* Ultimate Football QuizUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B49F954124CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizUITests" */;
-			buildPhases = (
-				B49F952E24CCAEC0004369BC /* Sources */,
-				B49F952F24CCAEC0004369BC /* Frameworks */,
-				B49F953024CCAEC0004369BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B49F953424CCAEC0004369BC /* PBXTargetDependency */,
-			);
-			name = "Ultimate Football QuizUITests";
-			productName = "Ultimate Football QuizUITests";
-			productReference = B49F953224CCAEC0004369BC /* Ultimate Football QuizUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -196,14 +175,6 @@
 				TargetAttributes = {
 					B49F951024CCAEB9004369BC = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					B49F952624CCAEC0004369BC = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = B49F951024CCAEB9004369BC;
-					};
-					B49F953124CCAEC0004369BC = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = B49F951024CCAEB9004369BC;
 					};
 				};
 			};
@@ -221,8 +192,6 @@
 			projectRoot = "";
 			targets = (
 				B49F951024CCAEB9004369BC /* Ultimate Football Quiz */,
-				B49F952624CCAEC0004369BC /* Ultimate Football QuizTests */,
-				B49F953124CCAEC0004369BC /* Ultimate Football QuizUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,26 +202,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49F952124CCAEC0004369BC /* LaunchScreen.storyboard in Resources */,
+				B49F955424CF80BC004369BC /* GoogleService-Info.plist in Resources */,
 				B49F951E24CCAEC0004369BC /* Assets.xcassets in Resources */,
 				B49F951C24CCAEB9004369BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B49F952524CCAEC0004369BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49F953024CCAEC0004369BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8FA38514D59919F8C4E58CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B055BEC95B424FADB6C8B1BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ultimate Football Quiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B49F950D24CCAEB9004369BC /* Sources */ = {
@@ -260,41 +258,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49F951924CCAEB9004369BC /* ViewController.swift in Sources */,
+				B49F955224CF63B9004369BC /* QuestionAnswerManager.swift in Sources */,
+				B49F954D24CCD970004369BC /* QuestionViewController.swift in Sources */,
 				B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */,
 				B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49F952324CCAEC0004369BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B49F952C24CCAEC0004369BC /* Ultimate_Football_QuizTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B49F952E24CCAEC0004369BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B49F953724CCAEC0004369BC /* Ultimate_Football_QuizUITests.swift in Sources */,
+				B49F954B24CCCF76004369BC /* settingViewController.swift in Sources */,
+				B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */,
+				B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B49F952924CCAEC0004369BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B49F951024CCAEB9004369BC /* Ultimate Football Quiz */;
-			targetProxy = B49F952824CCAEC0004369BC /* PBXContainerItemProxy */;
-		};
-		B49F953424CCAEC0004369BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B49F951024CCAEB9004369BC /* Ultimate Football Quiz */;
-			targetProxy = B49F953324CCAEC0004369BC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B49F951A24CCAEB9004369BC /* Main.storyboard */ = {
@@ -432,121 +406,41 @@
 		};
 		B49F953C24CCAEC0004369BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85M6Z5U52M;
 				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-Quiz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Football Quiz";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B49F953D24CCAEC0004369BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85M6Z5U52M;
 				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-Quiz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Football Quiz";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B49F953F24CCAEC0004369BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85M6Z5U52M;
-				INFOPLIST_FILE = "Ultimate Football QuizTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate Football Quiz.app/Ultimate Football Quiz";
-			};
-			name = Debug;
-		};
-		B49F954024CCAEC0004369BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85M6Z5U52M;
-				INFOPLIST_FILE = "Ultimate Football QuizTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ultimate Football Quiz.app/Ultimate Football Quiz";
-			};
-			name = Release;
-		};
-		B49F954224CCAEC0004369BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85M6Z5U52M;
-				INFOPLIST_FILE = "Ultimate Football QuizUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ultimate Football Quiz";
-			};
-			name = Debug;
-		};
-		B49F954324CCAEC0004369BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85M6Z5U52M;
-				INFOPLIST_FILE = "Ultimate Football QuizUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.aibrahim.Ultimate-Football-QuizUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Ultimate Football Quiz";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -567,24 +461,6 @@
 			buildConfigurations = (
 				B49F953C24CCAEC0004369BC /* Debug */,
 				B49F953D24CCAEC0004369BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B49F953E24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B49F953F24CCAEC0004369BC /* Debug */,
-				B49F954024CCAEC0004369BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B49F954124CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football QuizUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B49F954224CCAEC0004369BC /* Debug */,
-				B49F954324CCAEC0004369BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
