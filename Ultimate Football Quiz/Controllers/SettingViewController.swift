@@ -74,7 +74,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
                   
                   let composeVC = MFMailComposeViewController()
                   composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["abdiabdulld890@gmail.com"])
+                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
                   composeVC.setMessageBody("=== App Version: \(version) == ", isHTML: true)
                   composeVC.setSubject("(Ultimate Football App) - Found a bug, you should fix! ")
                   self.present(composeVC, animated: true, completion: nil)
@@ -84,7 +84,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
               { action -> Void in
                   let composeVC = MFMailComposeViewController()
                   composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["abdiabdulld890@gmail.com"])
+                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
                   composeVC.setMessageBody("", isHTML: true)
                   composeVC.setSubject("(Ultimate Football App) - Suggesting an Idea ")
                   self.present(composeVC, animated: true, completion: nil)
@@ -94,7 +94,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
               { action -> Void in
                   let composeVC = MFMailComposeViewController()
                   composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["abdiabdulld890@gmail.com"])
+                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
                   composeVC.setMessageBody("", isHTML: true)
                   composeVC.setSubject("(Ultimate Football App) - Advertisement ")
                   self.present(composeVC, animated: true, completion: nil)
@@ -104,7 +104,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
               { action -> Void in
                   let composeVC = MFMailComposeViewController()
                   composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["abdiabdulld890@gmail.com"])
+                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
                   composeVC.setMessageBody("", isHTML: true)
                   composeVC.setSubject("(Ultimate Football App) -  ")
                   self.present(composeVC, animated: true, completion: nil)
@@ -113,7 +113,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
               { action -> Void in
                   let composeVC = MFMailComposeViewController()
                   composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["abdiabdulld890@gmail.com"])
+                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
                   composeVC.setMessageBody("Question:    Answer:  ", isHTML: true)
                   composeVC.setSubject("(Ultimate Football App) -  New Question!! ")
                   self.present(composeVC, animated: true, completion: nil)

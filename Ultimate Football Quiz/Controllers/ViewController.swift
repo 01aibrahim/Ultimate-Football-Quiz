@@ -37,9 +37,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func trueFalsePressed(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Unavailable at the moment", message: "We are working hard to release this feature.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        self.present(alert, animated: true)
+        self.performSegue(withIdentifier: "goToTrueFalse", sender: self)
        
     }
  

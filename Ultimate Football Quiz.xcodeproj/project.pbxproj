@@ -10,6 +10,11 @@
 		A474D959BD86BFEFB9991A4F /* Pods_Ultimate_Football_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */; };
 		B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F124D424A200B12123 /* GeneralQuestions.swift */; };
 		B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F324D5D22900B12123 /* EndGameViewController.swift */; };
+		B49A0EE024E9D52100A10D4A /* StaduimQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */; };
+		B49A0EE224E9D73300A10D4A /* PremierLeagueQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE124E9D73300A10D4A /* PremierLeagueQuestions.swift */; };
+		B49A0EE424E9DE9F00A10D4A /* TrueFalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE324E9DE9F00A10D4A /* TrueFalseViewController.swift */; };
+		B49A0EE624E9E5AE00A10D4A /* QuestionTrueFalseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */; };
+		B49A0EE824E9E5F500A10D4A /* TrueFalseQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */; };
 		B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951424CCAEB9004369BC /* AppDelegate.swift */; };
 		B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951624CCAEB9004369BC /* SceneDelegate.swift */; };
 		B49F951924CCAEB9004369BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951824CCAEB9004369BC /* ViewController.swift */; };
@@ -27,6 +32,11 @@
 		5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.release.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.release.xcconfig"; sourceTree = "<group>"; };
 		B48700F124D424A200B12123 /* GeneralQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralQuestions.swift; sourceTree = "<group>"; };
 		B48700F324D5D22900B12123 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
+		B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaduimQuestions.swift; sourceTree = "<group>"; };
+		B49A0EE124E9D73300A10D4A /* PremierLeagueQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremierLeagueQuestions.swift; sourceTree = "<group>"; };
+		B49A0EE324E9DE9F00A10D4A /* TrueFalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseViewController.swift; sourceTree = "<group>"; };
+		B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTrueFalseManager.swift; sourceTree = "<group>"; };
+		B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseQuestions.swift; sourceTree = "<group>"; };
 		B49F951124CCAEB9004369BC /* Football Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49F951424CCAEB9004369BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49F951624CCAEB9004369BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,9 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				B49F951824CCAEB9004369BC /* ViewController.swift */,
-				B49F954A24CCCF76004369BC /* settingViewController.swift */,
 				B49F954C24CCD970004369BC /* QuestionViewController.swift */,
+				B49A0EE324E9DE9F00A10D4A /* TrueFalseViewController.swift */,
 				B48700F324D5D22900B12123 /* EndGameViewController.swift */,
+				B49F954A24CCCF76004369BC /* settingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,7 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */,
+				B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */,
 				B48700F124D424A200B12123 /* GeneralQuestions.swift */,
+				B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */,
+				B49A0EE124E9D73300A10D4A /* PremierLeagueQuestions.swift */,
+				B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,14 +272,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B49A0EE024E9D52100A10D4A /* StaduimQuestions.swift in Sources */,
+				B49A0EE224E9D73300A10D4A /* PremierLeagueQuestions.swift in Sources */,
 				B49F951924CCAEB9004369BC /* ViewController.swift in Sources */,
 				B49F955224CF63B9004369BC /* QuestionAnswerManager.swift in Sources */,
 				B49F954D24CCD970004369BC /* QuestionViewController.swift in Sources */,
+				B49A0EE824E9E5F500A10D4A /* TrueFalseQuestions.swift in Sources */,
+				B49A0EE424E9DE9F00A10D4A /* TrueFalseViewController.swift in Sources */,
 				B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */,
 				B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */,
 				B49F954B24CCCF76004369BC /* settingViewController.swift in Sources */,
 				B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */,
 				B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */,
+				B49A0EE624E9E5AE00A10D4A /* QuestionTrueFalseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,12 +20,6 @@ struct QuestionAnswerManager {
 
 }
 
-    
-
-
-
-
-
 /*
  
  
