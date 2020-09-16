@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>512321550002-rbiohoaubppnm2aheeatf0fb0edehdgb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.512321550002-rbiohoaubppnm2aheeatf0fb0edehdgb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCnK7XaXvCM-K9lCKmef_TbCw23v-Wulf8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>512321550002</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aibrahim.Ultimate-Football-Quiz</string>
+	<key>PROJECT_ID</key>
+	<string>ulitmate-football-quiz</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ulitmate-football-quiz.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:512321550002:ios:87952ce6ff3d36519ffbab</string>
+	<key>DATABASE_URL</key>
+	<string>https://ulitmate-football-quiz.firebaseio.com</string>
+</dict>
+</plist>
