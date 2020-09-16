@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A474D959BD86BFEFB9991A4F /* Pods_Ultimate_Football_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */; };
+		53DEC49174E44EC50BDBC525 /* Pods_Ultimate_Football_Quiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE9CD08B284C93A1D1654F2 /* Pods_Ultimate_Football_Quiz.framework */; };
+		B42430AF250CEF2500EDD6C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42430AE250CEF2500EDD6C9 /* StoreKit.framework */; };
+		B46C243D24FBE1A000E7E539 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46C243C24FBE1A000E7E539 /* GoogleService-Info.plist */; };
 		B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F124D424A200B12123 /* GeneralQuestions.swift */; };
 		B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48700F324D5D22900B12123 /* EndGameViewController.swift */; };
 		B49A0EE024E9D52100A10D4A /* StaduimQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */; };
@@ -15,6 +17,8 @@
 		B49A0EE424E9DE9F00A10D4A /* TrueFalseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE324E9DE9F00A10D4A /* TrueFalseViewController.swift */; };
 		B49A0EE624E9E5AE00A10D4A /* QuestionTrueFalseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */; };
 		B49A0EE824E9E5F500A10D4A /* TrueFalseQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */; };
+		B49A0EEA24EC419A00A10D4A /* WhoAmIQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EE924EC419A00A10D4A /* WhoAmIQuestions.swift */; };
+		B49A0EEC24EC45AE00A10D4A /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49A0EEB24EC45AE00A10D4A /* RandomNumber.swift */; };
 		B49F951524CCAEB9004369BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951424CCAEB9004369BC /* AppDelegate.swift */; };
 		B49F951724CCAEB9004369BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951624CCAEB9004369BC /* SceneDelegate.swift */; };
 		B49F951924CCAEB9004369BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F951824CCAEB9004369BC /* ViewController.swift */; };
@@ -24,12 +28,15 @@
 		B49F954B24CCCF76004369BC /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F954A24CCCF76004369BC /* settingViewController.swift */; };
 		B49F954D24CCD970004369BC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F954C24CCD970004369BC /* QuestionViewController.swift */; };
 		B49F955224CF63B9004369BC /* QuestionAnswerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */; };
-		B49F955424CF80BC004369BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B49F955324CF80BC004369BC /* GoogleService-Info.plist */; };
+		B4C65713250BD2E200C6D1E9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C65712250BD2E200C6D1E9 /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.debug.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.debug.xcconfig"; sourceTree = "<group>"; };
-		5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.release.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.release.xcconfig"; sourceTree = "<group>"; };
+		2CDCF439F485A610283DF866 /* Pods-Ultimate Football Quiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.release.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.release.xcconfig"; sourceTree = "<group>"; };
+		2CE9CD08B284C93A1D1654F2 /* Pods_Ultimate_Football_Quiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultimate_Football_Quiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B403E6F2250C04AE005E3B55 /* Football Quiz.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Football Quiz.entitlements"; sourceTree = "<group>"; };
+		B42430AE250CEF2500EDD6C9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B46C243C24FBE1A000E7E539 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B48700F124D424A200B12123 /* GeneralQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralQuestions.swift; sourceTree = "<group>"; };
 		B48700F324D5D22900B12123 /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaduimQuestions.swift; sourceTree = "<group>"; };
@@ -37,6 +44,8 @@
 		B49A0EE324E9DE9F00A10D4A /* TrueFalseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseViewController.swift; sourceTree = "<group>"; };
 		B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTrueFalseManager.swift; sourceTree = "<group>"; };
 		B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueFalseQuestions.swift; sourceTree = "<group>"; };
+		B49A0EE924EC419A00A10D4A /* WhoAmIQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmIQuestions.swift; sourceTree = "<group>"; };
+		B49A0EEB24EC45AE00A10D4A /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		B49F951124CCAEB9004369BC /* Football Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B49F951424CCAEB9004369BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B49F951624CCAEB9004369BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,8 +57,8 @@
 		B49F954A24CCCF76004369BC /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		B49F954C24CCD970004369BC /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerManager.swift; sourceTree = "<group>"; };
-		B49F955324CF80BC004369BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../UFQ Assests/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ultimate_Football_Quiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C65712250BD2E200C6D1E9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		D46AC2CAEA2BC89C4F52B728 /* Pods-Ultimate Football Quiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ultimate Football Quiz.debug.xcconfig"; path = "Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +66,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A474D959BD86BFEFB9991A4F /* Pods_Ultimate_Football_Quiz.framework in Frameworks */,
+				B42430AF250CEF2500EDD6C9 /* StoreKit.framework in Frameworks */,
+				53DEC49174E44EC50BDBC525 /* Pods_Ultimate_Football_Quiz.framework in Frameworks */,
+				B4C65713250BD2E200C6D1E9 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,8 +78,8 @@
 		596C60484A75C629F6E64B89 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */,
-				5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */,
+				D46AC2CAEA2BC89C4F52B728 /* Pods-Ultimate Football Quiz.debug.xcconfig */,
+				2CDCF439F485A610283DF866 /* Pods-Ultimate Football Quiz.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -79,7 +90,7 @@
 				B49F951324CCAEB9004369BC /* Ultimate Football Quiz */,
 				B49F951224CCAEB9004369BC /* Products */,
 				596C60484A75C629F6E64B89 /* Pods */,
-				F2FC410CB539069961A68341 /* Frameworks */,
+				BFF6D9F7976477419CE3A0B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +105,9 @@
 		B49F951324CCAEB9004369BC /* Ultimate Football Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				B403E6F2250C04AE005E3B55 /* Football Quiz.entitlements */,
+				B46C243C24FBE1A000E7E539 /* GoogleService-Info.plist */,
 				B49F952224CCAEC0004369BC /* Info.plist */,
-				B49F955324CF80BC004369BC /* GoogleService-Info.plist */,
 				B49F951424CCAEB9004369BC /* AppDelegate.swift */,
 				B49F951624CCAEB9004369BC /* SceneDelegate.swift */,
 				B49F955024CF6202004369BC /* Model */,
@@ -138,20 +150,24 @@
 		B49F955024CF6202004369BC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B49A0EEB24EC45AE00A10D4A /* RandomNumber.swift */,
 				B49F955124CF63B9004369BC /* QuestionAnswerManager.swift */,
 				B49A0EE524E9E5AE00A10D4A /* QuestionTrueFalseManager.swift */,
 				B48700F124D424A200B12123 /* GeneralQuestions.swift */,
 				B49A0EDF24E9D52100A10D4A /* StaduimQuestions.swift */,
 				B49A0EE124E9D73300A10D4A /* PremierLeagueQuestions.swift */,
 				B49A0EE724E9E5F500A10D4A /* TrueFalseQuestions.swift */,
+				B49A0EE924EC419A00A10D4A /* WhoAmIQuestions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F2FC410CB539069961A68341 /* Frameworks */ = {
+		BFF6D9F7976477419CE3A0B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDB67E2F6AC0B34AE34705A0 /* Pods_Ultimate_Football_Quiz.framework */,
+				B42430AE250CEF2500EDD6C9 /* StoreKit.framework */,
+				B4C65712250BD2E200C6D1E9 /* GameKit.framework */,
+				2CE9CD08B284C93A1D1654F2 /* Pods_Ultimate_Football_Quiz.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,11 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B49F953B24CCAEC0004369BC /* Build configuration list for PBXNativeTarget "Ultimate Football Quiz" */;
 			buildPhases = (
-				B055BEC95B424FADB6C8B1BC /* [CP] Check Pods Manifest.lock */,
+				3593EE9B34A4CB84CCD88037 /* [CP] Check Pods Manifest.lock */,
 				B49F950D24CCAEB9004369BC /* Sources */,
 				B49F950E24CCAEB9004369BC /* Frameworks */,
 				B49F950F24CCAEB9004369BC /* Resources */,
-				A8FA38514D59919F8C4E58CA /* [CP] Embed Pods Frameworks */,
+				CDAF38FD7F6D0894823EDBE5 /* [CP] Embed Pods Frameworks */,
+				35754E63FC497C3A81F86C68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B49F952124CCAEC0004369BC /* LaunchScreen.storyboard in Resources */,
-				B49F955424CF80BC004369BC /* GoogleService-Info.plist in Resources */,
+				B46C243D24FBE1A000E7E539 /* GoogleService-Info.plist in Resources */,
 				B49F951E24CCAEC0004369BC /* Assets.xcassets in Resources */,
 				B49F951C24CCAEB9004369BC /* Main.storyboard in Resources */,
 			);
@@ -226,24 +243,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A8FA38514D59919F8C4E58CA /* [CP] Embed Pods Frameworks */ = {
+		35754E63FC497C3A81F86C68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B055BEC95B424FADB6C8B1BC /* [CP] Check Pods Manifest.lock */ = {
+		3593EE9B34A4CB84CCD88037 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +282,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CDAF38FD7F6D0894823EDBE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ultimate Football Quiz/Pods-Ultimate Football Quiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +308,7 @@
 			files = (
 				B49A0EE024E9D52100A10D4A /* StaduimQuestions.swift in Sources */,
 				B49A0EE224E9D73300A10D4A /* PremierLeagueQuestions.swift in Sources */,
+				B49A0EEC24EC45AE00A10D4A /* RandomNumber.swift in Sources */,
 				B49F951924CCAEB9004369BC /* ViewController.swift in Sources */,
 				B49F955224CF63B9004369BC /* QuestionAnswerManager.swift in Sources */,
 				B49F954D24CCD970004369BC /* QuestionViewController.swift in Sources */,
@@ -284,6 +319,7 @@
 				B49F954B24CCCF76004369BC /* settingViewController.swift in Sources */,
 				B48700F424D5D22900B12123 /* EndGameViewController.swift in Sources */,
 				B48700F224D424A200B12123 /* GeneralQuestions.swift in Sources */,
+				B49A0EEA24EC419A00A10D4A /* WhoAmIQuestions.swift in Sources */,
 				B49A0EE624E9E5AE00A10D4A /* QuestionTrueFalseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +439,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -426,10 +462,13 @@
 		};
 		B49F953C24CCAEC0004369BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58E50E31471DAD3477E89E47 /* Pods-Ultimate Football Quiz.debug.xcconfig */;
+			baseConfigurationReference = D46AC2CAEA2BC89C4F52B728 /* Pods-Ultimate Football Quiz.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ultimate Football Quiz/Football Quiz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 85M6Z5U52M;
 				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -446,10 +485,13 @@
 		};
 		B49F953D24CCAEC0004369BC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BF4DC0F967FA348B2A7C36F /* Pods-Ultimate Football Quiz.release.xcconfig */;
+			baseConfigurationReference = 2CDCF439F485A610283DF866 /* Pods-Ultimate Football Quiz.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ultimate Football Quiz/Football Quiz.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 85M6Z5U52M;
 				INFOPLIST_FILE = "Ultimate Football Quiz/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

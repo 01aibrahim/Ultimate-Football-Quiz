@@ -7,11 +7,13 @@
 //
 
 import UIKit
-import GoogleMobileAds
 import MessageUI
+import Firebase
+import GoogleMobileAds
+import Firebase
+import FirebaseFirestore
 
-
-class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDelegate, GADInterstitialDelegate {
+class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDelegate, GADInterstitialDelegate{
     
     //Header
     @IBOutlet weak var questionNum: UILabel!
@@ -27,7 +29,9 @@ class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDele
     
     var quNum: Int = 0
     var point: Int = 0
-    
+    let gameMode = "True & False"
+    let db = Firestore.firestore()
+
     var trueFalseQuestion = TrueFalseQuestions()
     var interstitial: GADInterstitial!
     var bannerView: GADBannerView!
@@ -35,7 +39,24 @@ class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.logEvent("TrueFalse Played", parameters:nil)
         
+        questionNum.text = ("0 /10")
+        pointLabel.text = ("\(point)pts")
+        questionType.text = "True & False"
+        
+        startQuiz()
+        
+        if !UserDefaults.standard.bool(forKey: "adsRemoved"){
+            //Show Ads
+            adInformation()
+        }else{
+        }
+    }
+    
+    //MARK:- ADs
+    
+    func adInformation(){
         // Interstitial Ad
         interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
         interstitial.delegate = self
@@ -45,17 +66,9 @@ class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDele
         //Banner ad
         bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
         addBannerViewToView(bannerView)
-        
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
-        
-        questionNum.text = ("0 /10")
-        pointLabel.text = ("\(point)pts")
-        questionType.text = "True & False"
-        
-        
-        startQuiz()
     }
     
     //Tells the delegate the interstitial is to be animated off the screen.
@@ -90,46 +103,53 @@ class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDele
                                 constant: 0)
         ])
     }
-    
+    //MARK:- Prepare Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToEnd" {
+            let EndGameController = segue.destination as! EndGameViewController
+            EndGameController.point = point
+            EndGameController.gameMode = gameMode
+        }
+    }
     
     //MARK:- Question
     
     func startQuiz(){
-        
         if quNum < 10 {
             questionLabel.text = trueFalseQuestion.getQuestionText()
-            
         }else{
-            if interstitial.isReady {
-                interstitial.present(fromRootViewController: self)
+            if !UserDefaults.standard.bool(forKey: "adsRemoved"){
+                if interstitial.isReady {
+                    interstitial.present(fromRootViewController: self)
+                    Analytics.logEvent("Ad shown", parameters: nil)
+                    self.performSegue(withIdentifier: "goToEnd", sender: self)
+                }else{
+                    Analytics.logEvent("Ad not shown", parameters: nil)
+                    self.performSegue(withIdentifier: "goToEnd", sender: self)
+                }
+            }else{
                 self.performSegue(withIdentifier: "goToEnd", sender: self)
-            } else {
-                print("Ad wasn't ready")
-                self.performSegue(withIdentifier: "goToEnd", sender: self)
-                
             }
+            
         }
     }
+    //MARK:- Answers
     
     @IBAction func answeredPressed(_ sender: UIButton) {
-        let currentTitle = sender.currentTitle
-        let userChoice = currentTitle!.lowercased()
+        let userChoice = sender.currentTitle
         let correctAnswer = trueFalseQuestion.getAnswer()
         
         if userChoice == correctAnswer {
             point += 10
-            
+            pointLabel.text  = ("\(point)pts")
+
             // if user answer is correct
             sender.backgroundColor = UIColor.green
-            
-            pointLabel.text  = ("\(point)pts")
-            
         } else{
             // if user answer is wrong
             sender.backgroundColor = UIColor.red
             sender.setTitleColor(UIColor.white, for: .normal)
         }
-        
         quNum += 1
         questionNum.text = ("\(quNum) /10")
         trueFalseQuestion.nextQuestion()
@@ -140,35 +160,36 @@ class TrueFalseViewController: UIViewController, MFMailComposeViewControllerDele
             self.startQuiz()
         }
         sender.setTitleColor(#colorLiteral(red: 0.1098039216, green: 0.1647058824, blue: 0.3960784314, alpha: 1), for: .normal)
-        
     }
     
-    
-    
-    
-//MARK:- Report Question
+    //MARK:- Report Question
     @IBAction func reportPressed(_ sender: UIButton) {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         
-        if !MFMailComposeViewController.canSendMail() {
+        let alert = UIAlertController(title: "Report Question", message: "Below tell me whats wrong with this question", preferredStyle: .alert)
+        
+        alert.addTextField()
+        alert.textFields![0].placeholder = "Whats the problem?"
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+        }))
+        alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { (action) in
+            let questionReported = alert.textFields![0].text
             
-            let alert = UIAlertController(title: "Mail services are not available", message: "Please try again once available.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-            self.present(alert, animated: true)
-            print("Mail services are not available")
-            return
-        } else{
-            let composeVC = MFMailComposeViewController()
-            composeVC.mailComposeDelegate = self
-            composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
-            composeVC.setMessageBody("=== Game Mode: True & False, Version: \(version!) Question Number: 001, Question:  == Please write your message below:  ", isHTML: true)
-            composeVC.setSubject("(Ultimate Football App) - Error with question: \(String(describing: questionLabel.text)) ")
-            self.present(composeVC, animated: true, completion: nil)
-        }
+            var ref: DocumentReference? = nil
+            ref = self.db.collection("Report Question").addDocument(data: [
+                "Game Mode": "True & False",
+                "User said": questionReported!,
+                "Question is": self.questionLabel.text!
+                
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                } else {
+                    print(" New question added with DocumentID: \(ref!.documentID)")
+                }
+            }
+        }))
+        self.present(alert, animated: true)
     }
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    
 }
+

@@ -10,36 +10,98 @@ import UIKit
 import MessageUI
 import StoreKit
 import SafariServices
+import Firebase
 
-class settingViewController: UIViewController, MFMailComposeViewControllerDelegate {
+
+
+class settingViewController: UIViewController, MFMailComposeViewControllerDelegate, SKPaymentTransactionObserver, SKProductsRequestDelegate{
+
+    var productID: SKProduct?
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var versionNum: UILabel!
+    let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        SKPaymentQueue.default().add(self)
+        fetchProducts()
         
         // Version Number details
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             self.versionNum.text = "Version: " + version
         }
-        
     }
-    
     
     
 //MARK:- Ads
     
     @IBAction func removeAdPressed(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Unavailable at the moment", message: "We are working hard to release this feature.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
-        self.present(alert, animated: true)
+        guard let productID = productID else{
+            return
+        }
+        if SKPaymentQueue.canMakePayments(){
+            let payment = SKPayment(product: productID)
+            SKPaymentQueue.default().add(self)
+            SKPaymentQueue.default().add(payment)
+        }
     }
     
+    func fetchProducts(){
+        let request = SKProductsRequest(productIdentifiers: ["com.aibrahim.UltimateFootballQuiz.RemoveAds"])
+        request.delegate = self
+        request.start()
+    }
+    
+    func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
+        if let product = response.products.first{
+            productID = product
+            print("This is the info")
+            print(product.productIdentifier)
+            print(product.price)
+            print(product.localizedTitle)
+        }
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+        for transaction in transactions{
+            switch transaction.transactionState {
+            case .purchasing:
+                // No Op
+                break
+                
+            case .purchased, .restored:
+                //Unlock their item
+                UserDefaults.standard.set(true, forKey: "adsRemoved")
+                SKPaymentQueue.default().finishTransaction(transaction)
+                SKPaymentQueue.default().restoreCompletedTransactions()
+                SKPaymentQueue.default().remove(self)
+                break
+                
+            case .failed, .deferred:
+                SKPaymentQueue.default().finishTransaction(transaction)
+                SKPaymentQueue.default().remove(self)
+                break
+                
+            default:
+                SKPaymentQueue.default().finishTransaction(transaction)
+                SKPaymentQueue.default().remove(self)
+                break
+            }
+        }
+    }
+    
+//MARK: Stats
+    
     @IBAction func restorePurchasePressed(_ sender: UIButton) {
+       //Stats Pressed info
         let alert = UIAlertController(title: "Unavailable at the moment", message: "We are working hard to release this feature.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
         self.present(alert, animated: true)
+        
     }
+    
+
     
 //MARK:- Social
     
@@ -52,18 +114,15 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
     
     @IBAction func rateAppPressed(_ sender: UIButton) {
         SKStoreReviewController.requestReview()
-        
     }
     
     @IBAction func emailUsPressed(_ sender: UIButton) {
           if !MFMailComposeViewController.canSendMail() {
-              
                   let alert = UIAlertController(title: "Mail services are not available", message: "Please try again once available.", preferredStyle: .alert)
                   alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
                   self.present(alert, animated: true)
                   return
               } else{
-              
               let alert = UIAlertController(title: "Email us", message: "What is the enquire of your email.", preferredStyle: .alert)
               
               alert.addAction(UIAlertAction(title: "Bug with the app", style: .default)
@@ -109,15 +168,7 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
                   composeVC.setSubject("(Ultimate Football App) -  ")
                   self.present(composeVC, animated: true, completion: nil)
               })
-              alert.addAction(UIAlertAction(title: "Suggest a new question", style: .default)
-              { action -> Void in
-                  let composeVC = MFMailComposeViewController()
-                  composeVC.mailComposeDelegate = self
-                  composeVC.setToRecipients(["01aibrahim.dev@gmail.com"])
-                  composeVC.setMessageBody("Question:    Answer:  ", isHTML: true)
-                  composeVC.setSubject("(Ultimate Football App) -  New Question!! ")
-                  self.present(composeVC, animated: true, completion: nil)
-              })
+              
               alert.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: nil))
               self.present(alert, animated: true)
               }
@@ -127,9 +178,37 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
               controller.dismiss(animated: true, completion: nil)
           }
     
-    @IBAction func statsPressed(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Unavailable at the moment", message: "We are working hard to release this feature.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
+    @IBAction func addQuestionPressed(_ sender: Any){
+        let alert = UIAlertController(title: "Add new Question", message: "Please add the question below and the correct answer to that question", preferredStyle: .alert)
+        
+        alert.addTextField()
+        alert.addTextField()
+        
+        alert.textFields![0].placeholder = "Question"
+        alert.textFields![1].placeholder = "Correct Answer"
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) in
+            print("User Cancel")
+        }))
+        alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { (action) in
+            let UserQuestion = alert.textFields![0].text
+            let UserAnswer = alert.textFields![1].text
+            
+            var ref: DocumentReference? = nil
+            ref = self.db.collection("UserQuestionAnswer").addDocument(data: [
+                "Question": UserQuestion!,
+                "Answer": UserAnswer!,
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+//                    Rollbar.info("Error adding document: \(err)")
+                } else {
+                    print(" New question added with DocumentID: \(ref!.documentID)")
+//                    Rollbar.info(" New question added with DocumentID: \(ref!.documentID)")
+                }
+            }
+        }))
+        
         self.present(alert, animated: true)
     }
     
@@ -156,3 +235,4 @@ class settingViewController: UIViewController, MFMailComposeViewControllerDelega
         showSafariVC(for: "https://www.notion.so/Credits-a7e3c5074d3b41849375bdc762b10fad")
     }
 }
+

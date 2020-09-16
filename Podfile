@@ -7,10 +7,14 @@ target 'Ultimate Football Quiz' do
 
   # Pods for Ultimate Football Quiz
 
+#Google
 pod 'Firebase/Core'
+pod 'Firebase/Analytics'
 pod 'Firebase/Firestore'
-pod 'Firebase/Database'
+pod 'Firebase/InAppMessaging'
 pod 'Google-Mobile-Ads-SDK'
+pod 'Firebase/Messaging'
+
 
 
 end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,34 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of Ultimate FOOTBALL QUIZ" translatesAutoresizingMaskIntoConstraints="NO" id="EaU-oj-VfG">
-                                <rect key="frame" x="0.0" y="102" width="375" height="379"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="379" id="nJZ-TM-D4u"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Copy of Ultimate FOOTBALL QUIZ" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-Om-CNt">
+                                <rect key="frame" x="-14" y="126" width="403" height="359"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEVELOPED by Abdul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnq-B6-UQo">
-                                <rect key="frame" x="125.5" y="569" width="124" height="15"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lnq-B6-UQo" secondAttribute="bottom" constant="83" id="Uno-05-zzr"/>
-                            <constraint firstItem="EaU-oj-VfG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bkq-JS-2k4"/>
-                            <constraint firstItem="EaU-oj-VfG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eqt-5b-D6Q"/>
-                            <constraint firstItem="EaU-oj-VfG" firstAttribute="centerX" secondItem="lnq-B6-UQo" secondAttribute="centerX" id="sis-yK-XXr"/>
-                            <constraint firstItem="EaU-oj-VfG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="102" id="u1m-a4-PR3"/>
-                            <constraint firstItem="lnq-B6-UQo" firstAttribute="top" secondItem="EaU-oj-VfG" secondAttribute="bottom" constant="88" id="uEg-R9-491"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Ob-Om-CNt" secondAttribute="bottom" constant="182" id="Avt-pv-cVB"/>
+                            <constraint firstItem="4Ob-Om-CNt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Tdo-17-Y9r"/>
+                            <constraint firstItem="4Ob-Om-CNt" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-30" id="m45-w2-yN1"/>
+                            <constraint firstItem="4Ob-Om-CNt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="q4T-aV-Xs2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

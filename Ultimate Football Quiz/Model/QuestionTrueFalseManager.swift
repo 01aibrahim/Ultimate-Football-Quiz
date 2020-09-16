@@ -12,5 +12,4 @@ struct QuestionTrueFalseManager {
      
     var Question: String
     var Answer: String
-
 }
